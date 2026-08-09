@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="mn" class="dark">
 <head>
@@ -22,6 +21,10 @@
             darktext: '#5c6c84',
             redCol: '#ef5555',
             greenCol: '#10b981',
+
+            customRed: '#ef5555',     // Улаавтар өнгө
+            customBlue: '#3b82f6',    // Цэнхэвтэр өнгө
+            customGreen: '#10b981',   // Ногоовтор өнгө
           }
         }
       }
@@ -50,42 +53,42 @@
     <div class="sidebar-menu flex-1 overflow-y-auto py-[10px] [&::-webkit-scrollbar]:w-[1.5px] [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-bordercol [&::-webkit-scrollbar-thumb]:rounded-[3px]">
       <div class="menu-section-title text-[10px] text-darktext px-4 py-2 tracking-[0.5px] font-bold uppercase">ҮНДСЭН</div>
       <a href="#" data-page="dashboard" class="menu-item active px-4 py-2 text-blue-600 dark:text-blue-500 bg-blue-50 dark:bg-menuactive border-r-[3px] border-blue-600 dark:border-blue-500 cursor-pointer flex items-center justify-between no-underline transition-colors">Хянах самбар</a>
-      <a href="#" data-page="owners" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Сууц өмчлөгчийн бүртгэл</a>
-      <a href="#" data-page="companies" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Аж ахуйн нэгж бүртгэл</a>
+      <a href="#" data-page="residents" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Сууц өмчлөгчийн бүртгэл</a>
+      <a href="#" data-page="business" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Аж ахуйн нэгж бүртгэл</a>
       <a href="#" data-page="clients" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Харилцагчийн бүртгэл</a>
       <a href="#" data-page="assets" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Үндсэн хөрөнгө бүртгэл</a>
       <a href="#" data-page="employees" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Ажилтны бүртгэл</a>
-      <a href="#" data-page="poll" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Сонгууль, санал асуулга</a>
+      <a href="#" data-page="polls" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Сонгууль, санал асуулга</a>
       <a href="#" data-page="payments" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">
         <span>Төлбөр төлөлт</span>
-        <span class="badge bg-[#ef5555] text-white text-[10px] px-1.5 py-0.5 rounded-[10px] font-semibold leading-none">64</span>
+        <span class="badge bg-customRed text-white text-[10px] px-1.5 py-0.5 rounded-[10px] font-semibold leading-none">64</span>
       </a>
-      <a href="#" data-page="inventory" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Тоол, зоогоос, агуулах</a>
-      <a href="#" data-page="notifications" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Зар, мэдэгдэл илгээх</a>
+      <a href="#" data-page="realestate" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Тоот, зогсоол, агуулах</a>
+      <a href="#" data-page="notifications" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Зар, мэдэгдэл</a>
       <a href="#" data-page="cccenter" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">CC center</a>
-      <a href="#" data-page="infection" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Халдвар удирдлага</a>
+      <a href="#" data-page="boomgate" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Хаалтны удирдлага</a>
       <a href="#" data-page="news" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Мэдээ, мэдээлэл</a>
       <a href="#" data-page="aggregate" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Мэдээний агрегат</a>
       
       <div class="menu-section-title text-[10px] text-darktext px-4 py-2 tracking-[0.5px] font-bold uppercase mt-2">ТАЙЛАН, САНХҮҮ</div>
       <a href="#" data-page="accounting" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Нягтлан бодох бүртгэл</a>
-      <a href="#" data-page="internal-report" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">СӨХ дотоод тайлан</a>
-      <a href="#" data-page="tax-report" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Санхүү, татварын тайлан</a>
+      <a href="#" data-page="internal" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">СӨХ дотоод тайлан</a>
+      <a href="#" data-page="fintax" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Санхүү, татварын тайлан</a>
       <a href="#" data-page="transactions" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Гүйлгээний бүртгэл</a>
       
       <div class="menu-section-title text-[10px] text-darktext px-4 py-2 tracking-[0.5px] font-bold uppercase mt-2">АДМИН</div>
-      <a href="#" data-page="setting-soh" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">СӨХ тохиргоо</a>
-      <a href="#" data-page="setting-team" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Хамт олон тохиргоо</a>
-      <a href="#" data-page="setting-tariff" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Тариф тохиргоо</a>
-      <a href="#" data-page="setting-vat" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">НӨБ тохиргоо</a>
+      <a href="#" data-page="setting-hoa" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">СӨХ тохиргоо</a>
+      <a href="#" data-page="setting-modeling" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Хаягжилт тохиргоо</a>
+      <a href="#" data-page="setting-payments" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Тариф тохиргоо</a>
+      <a href="#" data-page="setting-accounting" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">НӨБ тохиргоо</a>
       <a href="#" data-page="setting-assets" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Үндсэн хөрөнгө тохиргоо</a>
-      <a href="#" data-page="setting-loans" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Зээл зээлийн үлдэгдэл</a>
+      <a href="#" data-page="setting-trends" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Зээл зээлийн үлдэгдэл</a>
       <a href="#" data-page="setting-permissions" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Хандах эрхийн тохиргоо</a>
       <a href="#" data-page="setting-users" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Хэрэглэгч удирдлага</a>
       <a href="#" data-page="setting-userapp" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">UserApp тохиргоо</a>
-      <a href="#" data-page="setting-ai" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">AI Integration Plan</a>
+      <a href="#" data-page="setting-dev" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">AI Integration Plan</a>
       <a href="#" data-page="setting-cosmo" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Cosmo тохиргоо</a>
-      <a href="#" data-page="setting-protocol" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Лог файл</a>
+      <a href="#" data-page="setting-log" class="menu-item px-4 py-2 text-slate-600 dark:text-mutedtext hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-menuhover cursor-pointer flex items-center justify-between no-underline transition-colors">Лог файл</a>
     </div>
 
     <!-- Сайдбарын доод карт хэсэг -->
@@ -146,7 +149,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5">
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
           <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРД НЭХЭМЖИЛСЭН</div>
-          <div class="text-2xl font-bold text-[#3b82f6] my-1">14,385,000.00₮</div>
+          <div class="text-2xl font-bold text-customBlue my-1">14,385,000.00₮</div>
           <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
             <div>Сууц өмчлөгч - 1,510,000.00₮</div>
             <div>Аж ахуйн нэгж - 12,875,000.00₮</div>
@@ -154,7 +157,7 @@
         </div>
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
           <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРЫН ОРЛОГО</div>
-          <div class="text-2xl font-bold text-[#10b981] my-1">0.00₮</div>
+          <div class="text-2xl font-bold text-customGreen my-1">0.00₮</div>
           <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
             <div>Сууц өмчлөгч - 0/18</div>
             <div>Аж ахуйн нэгж - 0/36</div>
@@ -162,7 +165,7 @@
         </div>
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
           <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">НИЙТ ӨР АВЛАГА</div>
-          <div class="text-2xl font-bold text-[#ef5555] my-1">28,770,000.00₮</div>
+          <div class="text-2xl font-bold text-customRed my-1">28,770,000.00₮</div>
           <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
             <div>Сууц өмчлөгч - 18/18</div>
             <div>Аж ахуйн нэгж - 36/36</div>
@@ -184,8 +187,8 @@
           <div class="flex items-center justify-between mb-4">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Сарын орлого / зарлага</div>
             <div class="flex items-center gap-3">
-              <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-[#3b82f6] inline-block"></span> Орлого</div>
-              <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-[#10b981] inline-block"></span> Зарлага</div>
+              <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-customBlue inline-block"></span> Орлого</div>
+              <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-customGreen inline-block"></span> Зарлага</div>
               <select class="bg-slate-50 dark:bg-[#0b132b] border border-slate-200 dark:border-[#1a2642] text-slate-900 dark:text-white text-xs rounded px-2 py-1 outline-none">
                 <option>2026</option>
               </select>
@@ -216,9 +219,9 @@
           </div>
           <div class="space-y-3 text-xs text-slate-500 dark:text-[#8a99ad]">
             <div class="flex justify-between items-center"><span>Нийт төлбөр төлөгч тоо</span> <span class="text-slate-900 dark:text-white font-medium">54</span></div>
-            <div class="flex justify-between items-center"><span>Төлбөр төлсөн</span> <span class="text-[#10b981] font-medium">0</span></div>
+            <div class="flex justify-between items-center"><span>Төлбөр төлсөн</span> <span class="text-customGreen font-medium">0</span></div>
             <div class="flex justify-between items-center"><span>Хүлээлттэй</span> <span class="text-slate-900 dark:text-white font-medium">0</span></div>
-            <div class="flex justify-between items-center"><span>Хугацаа хэтэрсэн</span> <span class="text-[#ef5555] font-medium">54</span></div>
+            <div class="flex justify-between items-center"><span>Хугацаа хэтэрсэн</span> <span class="text-customRed font-medium">54</span></div>
             <div class="flex justify-between items-center"><span>Эрсдэлтэй</span> <span class="text-slate-900 dark:text-white font-medium">0</span></div>
             <div class="border-t border-slate-200 dark:border-[#1a2642] pt-2 flex justify-between items-center"><span>Энэ сарын төлбөрийн явц</span> <span class="text-slate-900 dark:text-white font-medium">0%</span></div>
             <div class="flex justify-between items-center"><span>Энэ сарын өр авлагын харьцаа</span> <span class="text-slate-900 dark:text-white font-medium">0%</span></div>
@@ -274,31 +277,31 @@
                   <td class="py-2 text-slate-900 dark:text-white font-medium">Tous Les Jours</td>
                   <td class="py-2">Аж ахуйн нэгж</td>
                   <td class="py-2">2 сар</td>
-                  <td class="py-2 text-right text-[#ef5555] font-medium">4,400,000.00₮</td>
+                  <td class="py-2 text-right text-customRed font-medium">4,400,000.00₮</td>
                 </tr>
                 <tr>
                   <td class="py-2 text-slate-900 dark:text-white font-medium">Эрхий Мэргэн Цэцэрлэг</td>
                   <td class="py-2">Аж ахуйн нэгж</td>
                   <td class="py-2">2 сар</td>
-                  <td class="py-2 text-right text-[#ef5555] font-medium">4,000,000.00₮</td>
+                  <td class="py-2 text-right text-customRed font-medium">4,000,000.00₮</td>
                 </tr>
                 <tr>
                   <td class="py-2 text-slate-900 dark:text-white font-medium">BlackBull carwash</td>
                   <td class="py-2">Аж ахуйн нэгж</td>
                   <td class="py-2">2 сар</td>
-                  <td class="py-2 text-right text-[#ef5555] font-medium">1,800,000.00₮</td>
+                  <td class="py-2 text-right text-customRed font-medium">1,800,000.00₮</td>
                 </tr>
                 <tr>
                   <td class="py-2 text-slate-900 dark:text-white font-medium">Ace Esport</td>
                   <td class="py-2">Аж ахуйн нэгж</td>
                   <td class="py-2">2 сар</td>
-                  <td class="py-2 text-right text-[#ef5555] font-medium">1,400,000.00₮</td>
+                  <td class="py-2 text-right text-customRed font-medium">1,400,000.00₮</td>
                 </tr>
                 <tr>
                   <td class="py-2 text-slate-900 dark:text-white font-medium">Cafe Fonte</td>
                   <td class="py-2">Аж ахуйн нэгж</td>
                   <td class="py-2">2 сар</td>
-                  <td class="py-2 text-right text-[#ef5555] font-medium">1,260,000.00₮</td>
+                  <td class="py-2 text-right text-customRed font-medium">1,260,000.00₮</td>
                 </tr>
               </tbody>
             </table>
@@ -321,7 +324,7 @@
           <div class="flex flex-col">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Хотхоны зах зээлийн бодит үнэлгээ (Сүүлийн 12 сар)</div>
             <div class="text-xs text-slate-500 dark:text-[#8a99ad] mt-1">Орон сууцны борлуулалтын үнэ (₮/м²)</div>
-            <div class="text-xl font-bold text-[#3b82f6] mt-1">7,250,000.00₮ <span class="text-xs text-[#10b981] font-normal">▲ 0.7%</span></div>
+            <div class="text-xl font-bold text-customBlue mt-1">7,250,000.00₮ <span class="text-xs text-customGreen font-normal">▲ 0.7%</span></div>
           </div>
           <div class="flex-1 flex items-end pt-4">
             <div class="w-full h-24 border-b border-l border-slate-200 dark:border-[#1a2642] relative flex items-end">
@@ -334,8 +337,8 @@
           <div class="flex flex-col">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Орон сууцны түрээсийн үнэ (1-6 өрөө, ₮/сар)</div>
             <div class="flex flex-wrap gap-3 text-[11px] text-slate-500 dark:text-[#8a99ad] mt-1">
-              <span><span class="text-[#3b82f6] font-bold">■</span> 1 өрөө</span>
-              <span><span class="text-[#10b981] font-bold">■</span> 2 өрөө</span>
+              <span><span class="text-customBlue font-bold">■</span> 1 өрөө</span>
+              <span><span class="text-customGreen font-bold">■</span> 2 өрөө</span>
               <span><span class="text-yellow-500 font-bold">■</span> 3 өрөө</span>
               <span><span class="text-purple-400 font-bold">■</span> 4 өрөө</span>
               <span><span class="text-red-400 font-bold">■</span> 5 өрөө</span>
@@ -353,8 +356,8 @@
           <div class="flex flex-col">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Агуулах, Зогсоолын борлуулалтын үнэ (₮)</div>
             <div class="flex gap-4 text-[11px] text-slate-500 dark:text-[#8a99ad] mt-1">
-              <span><span class="text-[#3b82f6] font-bold">■</span> Агуулах</span>
-              <span><span class="text-[#10b981] font-bold">■</span> Зогсоол</span>
+              <span><span class="text-customBlue font-bold">■</span> Агуулах</span>
+              <span><span class="text-customGreen font-bold">■</span> Зогсоол</span>
             </div>
           </div>
           <div class="flex-1 flex items-end pt-4">
@@ -368,8 +371,8 @@
           <div class="flex flex-col">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Агуулах, Зогсоолын түрээслэх үнэ (₮/сар)</div>
             <div class="flex gap-4 text-[11px] text-slate-500 dark:text-[#8a99ad] mt-1">
-              <span><span class="text-[#3b82f6] font-bold">■</span> Агуулах</span>
-              <span><span class="text-[#10b981] font-bold">■</span> Зогсоол</span>
+              <span><span class="text-customBlue font-bold">■</span> Агуулах</span>
+              <span><span class="text-customGreen font-bold">■</span> Зогсоол</span>
             </div>
           </div>
           <div class="flex-1 flex items-end pt-4">
@@ -438,7 +441,7 @@
         for (let m = 1; m <= 12; m++) {
           let isUnpaid = hasBalance && (m >= 7);
           if (isUnpaid) {
-            monthsHTML += `<span class="w-4 h-4 bg-[#ef5555] text-white text-[9px] flex items-center justify-center rounded font-bold">${m}</span>`;
+            monthsHTML += `<span class="w-4 h-4 bg-customRed text-white text-[9px] flex items-center justify-center rounded font-bold">${m}</span>`;
           } else {
             monthsHTML += `<span class="w-4 h-4 bg-slate-200 dark:bg-[#1a2642] text-slate-700 dark:text-white text-[9px] flex items-center justify-center rounded">${m}</span>`;
           }
@@ -447,7 +450,7 @@
 
         rowsHTML += `
           <tr class="hover:bg-slate-100 dark:hover:bg-menuhover transition-colors">
-            <td class="py-2.5 px-3 w-[80px] text-slate-900 dark:text-white font-medium flex items-center gap-1.5"><span class="w-2 h-2 rounded-full ${hasBalance ? 'bg-[#ef5555]' : 'bg-[#10b981]'} inline-block"></span> ${bair}</td>
+            <td class="py-2.5 px-3 w-[80px] text-slate-900 dark:text-white font-medium flex items-center gap-1.5"><span class="w-2 h-2 rounded-full ${hasBalance ? 'bg-customRed' : 'bg-customGreen'} inline-block"></span> ${bair}</td>
             <td class="py-2.5 px-3 w-[70px]">${toot}</td>
             <td class="py-2.5 px-3 w-[80px]">${talbai} м²</td>
             <td class="py-2.5 px-3 w-[100px] text-slate-900 dark:text-white">${sample.name}</td>
@@ -465,7 +468,7 @@
             <td class="py-2.5 px-3 w-[80px] text-right">
               <div class="flex items-center justify-end gap-2 text-slate-500 dark:text-[#8a99ad]">
                 <button class="hover:text-slate-900 dark:hover:text-white" title="Засах"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg></button>
-                <button class="hover:text-[#ef5555]" title="Устгах"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button>
+                <button class="hover:text-customRed" title="Устгах"><svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button>
               </div>
             </td>
           </tr>
@@ -477,48 +480,48 @@
     // Хуудас хооронд шилжих контент
     const pagesContent = {
       'dashboard': `
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5">
-          <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
-            <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРД НЭХЭМЖИЛСЭН</div>
-            <div class="text-2xl font-bold text-[#3b82f6] my-1">14,385,000.00₮</div>
-            <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
-              <div>Сууц өмчлөгч - 1,510,000.00₮</div>
-              <div>Аж ахуйн нэгж - 12,875,000.00₮</div>
-            </div>
-          </div>
-          <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
-            <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРЫН ОРЛОГО</div>
-            <div class="text-2xl font-bold text-[#10b981] my-1">0.00₮</div>
-            <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
-              <div>Сууц өмчлөгч - 0/18</div>
-              <div>Аж ахуйн нэгж - 0/36</div>
-            </div>
-          </div>
-          <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
-            <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">НИЙТ ӨР АВЛАГА</div>
-            <div class="text-2xl font-bold text-[#ef5555] my-1">28,770,000.00₮</div>
-            <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
-              <div>Сууц өмчлөгч - 18/18</div>
-              <div>Аж ахуйн нэгж - 36/36</div>
-            </div>
-          </div>
-          <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
-            <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">НИЙТ ОРШИН СУУГЧ</div>
-            <div class="text-2xl font-bold text-slate-900 dark:text-[#e2e8f0] my-1">65</div>
-            <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
-              <div>0-6 насны хүүхэд - 13</div>
-              <div>6-18 насны хүүхэд - 16</div>
-            </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5">
+        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
+          <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРД НЭХЭМЖИЛСЭН</div>
+          <div class="text-2xl font-bold text-customBlue my-1">14,385,000.00₮</div>
+          <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
+            <div>Сууц өмчлөгч - 1,510,000.00₮</div>
+            <div>Аж ахуйн нэгж - 12,875,000.00₮</div>
           </div>
         </div>
+        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
+          <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРЫН ОРЛОГО</div>
+          <div class="text-2xl font-bold text-customGreen my-1">0.00₮</div>
+          <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
+            <div>Сууц өмчлөгч - 0/18</div>
+            <div>Аж ахуйн нэгж - 0/36</div>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
+          <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">НИЙТ ӨР АВЛАГА</div>
+          <div class="text-2xl font-bold text-customRed my-1">28,770,000.00₮</div>
+          <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
+            <div>Сууц өмчлөгч - 18/18</div>
+            <div>Аж ахуйн нэгж - 36/36</div>
+          </div>
+        </div>
+        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
+          <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">НИЙТ ОРШИН СУУГЧ</div>
+          <div class="text-2xl font-bold text-slate-900 dark:text-[#e2e8f0] my-1">65</div>
+          <div class="text-[11px] text-slate-500 dark:text-[#8a99ad] space-y-0.5">
+            <div>0-6 насны хүүхэд - 13</div>
+            <div>6-18 насны хүүхэд - 16</div>
+          </div>
+        </div>
+      </div>
 
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
           <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
             <div class="flex items-center justify-between mb-4">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Сарын орлого / зарлага</div>
               <div class="flex items-center gap-3">
-                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-[#3b82f6] inline-block"></span> Орлого</div>
-                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-[#10b981] inline-block"></span> Зарлага</div>
+                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-customBlue inline-block"></span> Орлого</div>
+                <div class="flex items-center gap-1.5 text-xs text-slate-500 dark:text-[#8a99ad]"><span class="w-2.5 h-2.5 rounded-full bg-customGreen inline-block"></span> Зарлага</div>
                 <select class="bg-slate-50 dark:bg-[#0b132b] border border-slate-200 dark:border-[#1a2642] text-slate-900 dark:text-white text-xs rounded px-2 py-1 outline-none">
                   <option>2026</option>
                 </select>
@@ -549,9 +552,9 @@
             </div>
             <div class="space-y-3 text-xs text-slate-500 dark:text-[#8a99ad]">
               <div class="flex justify-between items-center"><span>Нийт төлбөр төлөгч тоо</span> <span class="text-slate-900 dark:text-white font-medium">54</span></div>
-              <div class="flex justify-between items-center"><span>Төлбөр төлсөн</span> <span class="text-[#10b981] font-medium">0</span></div>
+              <div class="flex justify-between items-center"><span>Төлбөр төлсөн</span> <span class="text-customGreen font-medium">0</span></div>
               <div class="flex justify-between items-center"><span>Хүлээлттэй</span> <span class="text-slate-900 dark:text-white font-medium">0</span></div>
-              <div class="flex justify-between items-center"><span>Хугацаа хэтэрсэн</span> <span class="text-[#ef5555] font-medium">54</span></div>
+              <div class="flex justify-between items-center"><span>Хугацаа хэтэрсэн</span> <span class="text-customRed font-medium">54</span></div>
               <div class="flex justify-between items-center"><span>Эрсдэлтэй</span> <span class="text-slate-900 dark:text-white font-medium">0</span></div>
               <div class="border-t border-slate-200 dark:border-[#1a2642] pt-2 flex justify-between items-center"><span>Энэ сарын төлбөрийн явц</span> <span class="text-slate-900 dark:text-white font-medium">0%</span></div>
               <div class="flex justify-between items-center"><span>Энэ сарын өр авлагын харьцаа</span> <span class="text-slate-900 dark:text-white font-medium">0%</span></div>
@@ -606,31 +609,31 @@
                     <td class="py-2 text-slate-900 dark:text-white font-medium">Tous Les Jours</td>
                     <td class="py-2">Аж ахуйн нэгж</td>
                     <td class="py-2">2 сар</td>
-                    <td class="py-2 text-right text-[#ef5555] font-medium">4,400,000.00₮</td>
+                    <td class="py-2 text-right text-customRed font-medium">4,400,000.00₮</td>
                   </tr>
                   <tr>
                     <td class="py-2 text-slate-900 dark:text-white font-medium">Эрхий Мэргэн Цэцэрлэг</td>
                     <td class="py-2">Аж ахуйн нэгж</td>
                     <td class="py-2">2 сар</td>
-                    <td class="py-2 text-right text-[#ef5555] font-medium">4,000,000.00₮</td>
+                    <td class="py-2 text-right text-customRed font-medium">4,000,000.00₮</td>
                   </tr>
                   <tr>
                     <td class="py-2 text-slate-900 dark:text-white font-medium">BlackBull carwash</td>
                     <td class="py-2">Аж ахуйн нэгж</td>
                     <td class="py-2">2 сар</td>
-                    <td class="py-2 text-right text-[#ef5555] font-medium">1,800,000.00₮</td>
+                    <td class="py-2 text-right text-customRed font-medium">1,800,000.00₮</td>
                   </tr>
                   <tr>
                     <td class="py-2 text-slate-900 dark:text-white font-medium">Ace Esport</td>
                     <td class="py-2">Аж ахуйн нэгж</td>
                     <td class="py-2">2 сар</td>
-                    <td class="py-2 text-right text-[#ef5555] font-medium">1,400,000.00₮</td>
+                    <td class="py-2 text-right text-customRed font-medium">1,400,000.00₮</td>
                   </tr>
                   <tr>
                     <td class="py-2 text-slate-900 dark:text-white font-medium">Cafe Fonte</td>
                     <td class="py-2">Аж ахуйн нэгж</td>
                     <td class="py-2">2 сар</td>
-                    <td class="py-2 text-right text-[#ef5555] font-medium">1,260,000.00₮</td>
+                    <td class="py-2 text-right text-customRed font-medium">1,260,000.00₮</td>
                   </tr>
                 </tbody>
               </table>
@@ -651,7 +654,7 @@
             <div class="flex flex-col">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Хотхоны зах зээлийн бодит үнэлгээ (Сүүлийн 12 сар)</div>
               <div class="text-xs text-slate-500 dark:text-[#8a99ad] mt-1">Орон сууцны борлуулалтын үнэ (₮/м²)</div>
-              <div class="text-xl font-bold text-[#3b82f6] mt-1">7,250,000.00₮ <span class="text-xs text-[#10b981] font-normal">▲ 0.7%</span></div>
+              <div class="text-xl font-bold text-customBlue mt-1">7,250,000.00₮ <span class="text-xs text-customGreen font-normal">▲ 0.7%</span></div>
             </div>
             <div class="flex-1 flex items-end pt-4">
               <div class="w-full h-24 border-b border-l border-slate-200 dark:border-[#1a2642] relative flex items-end">
@@ -664,8 +667,8 @@
             <div class="flex flex-col">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Орон сууцны түрээсийн үнэ (1-6 өрөө, ₮/сар)</div>
               <div class="flex flex-wrap gap-3 text-[11px] text-slate-500 dark:text-[#8a99ad] mt-1">
-                <span><span class="text-[#3b82f6] font-bold">■</span> 1 өрөө</span>
-                <span><span class="text-[#10b981] font-bold">■</span> 2 өрөө</span>
+                <span><span class="text-customBlue font-bold">■</span> 1 өрөө</span>
+                <span><span class="text-customGreen font-bold">■</span> 2 өрөө</span>
                 <span><span class="text-yellow-500 font-bold">■</span> 3 өрөө</span>
                 <span><span class="text-purple-400 font-bold">■</span> 4 өрөө</span>
                 <span><span class="text-red-400 font-bold">■</span> 5 өрөө</span>
@@ -683,8 +686,8 @@
             <div class="flex flex-col">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Агуулах, Зогсоолын борлуулалтын үнэ (₮)</div>
               <div class="flex gap-4 text-[11px] text-slate-500 dark:text-[#8a99ad] mt-1">
-                <span><span class="text-[#3b82f6] font-bold">■</span> Агуулах</span>
-                <span><span class="text-[#10b981] font-bold">■</span> Зогсоол</span>
+                <span><span class="text-customBlue font-bold">■</span> Агуулах</span>
+                <span><span class="text-customGreen font-bold">■</span> Зогсоол</span>
               </div>
             </div>
             <div class="flex-1 flex items-end pt-4">
@@ -698,8 +701,8 @@
             <div class="flex flex-col">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Агуулах, Зогсоолын түрээслэх үнэ (₮/сар)</div>
               <div class="flex gap-4 text-[11px] text-slate-500 dark:text-[#8a99ad] mt-1">
-                <span><span class="text-[#3b82f6] font-bold">■</span> Агуулах</span>
-                <span><span class="text-[#10b981] font-bold">■</span> Зогсоол</span>
+                <span><span class="text-customBlue font-bold">■</span> Агуулах</span>
+                <span><span class="text-customGreen font-bold">■</span> Зогсоол</span>
               </div>
             </div>
             <div class="flex-1 flex items-end pt-4">
@@ -745,14 +748,14 @@
                   <th class="py-2.5 px-3 w-[100px]">ОВОГ</th>
                   <th class="py-2.5 px-3 w-[100px]">УТАС</th>
                   <th class="py-2.5 px-3 w-[140px]">ИМЭЙЛ</th>
-                  <th class="py-2.5 px-3 w-[120px]">ӨМЧЛӨГСӨН ОГНОО</th>
+                  <th class="py-2.5 px-3 w-[120px]">ӨМЧИЛСӨН</th>
                   <th class="py-2.5 px-3 w-[70px]">АМ БҮЛ</th>
                   <th class="py-2.5 px-3 w-[70px]">0-6 НАС</th>
                   <th class="py-2.5 px-3 w-[70px]">6-18 НАС</th>
                   <th class="py-2.5 px-3 w-[80px]">ЗОГСООЛ</th>
                   <th class="py-2.5 px-3 w-[90px]">АГУУЛАХ</th>
                   <th class="py-2.5 px-3 w-[100px]">МАШИН</th>
-                  <th class="py-2.5 px-3 w-[180px]">ТӨЛБӨРИЙН ТҮҮХ (1-12 САР)</th>
+                  <th class="py-2.5 px-3 w-[180px]">ТӨЛӨЛТ (САРААР)</th>
                   <th class="py-2.5 px-3 w-[80px] text-right">ҮЙЛДЭЛ</th>
                 </tr>
               </thead>
@@ -765,8 +768,8 @@
           <div class="flex items-center justify-between pt-3 mt-2 border-t border-slate-200 dark:border-[#1a2642] text-[11px] text-slate-500 dark:text-[#8a99ad] shrink-0">
             <div>Нийт: 60 өмчлөгч</div>
             <div class="flex items-center gap-4">
-              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#10b981] inline-block"></span> Төлбөрийн үлдэгдэлгүй: 18</span>
-              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#ef5555] inline-block"></span> Төлбөрийн үлдэгдэлтэй: 42</span>
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-customGreen inline-block"></span> Төлбөрийн үлдэгдэлгүй: 18</span>
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-customRed inline-block"></span> Төлбөрийн үлдэгдэлтэй: 42</span>
             </div>
           </div>
         </div>
