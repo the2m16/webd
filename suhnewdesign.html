@@ -142,11 +142,11 @@
       </button>
     </header>
             
-    <!-- Контент хэсэг (Босоо болон хэвтээ скролл хамтдаа ижил загвартай байна) -->
-    <div id="contentBody" class="content-body flex-1 p-2.5 overflow-y-auto overflow-x-auto bg-slate-100 dark:bg-[#0b132b] flex flex-col gap-2.5 [&::-webkit-scrollbar]:w-[1.5px] [&::-webkit-scrollbar]:h-[1.5px] [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-bordercol [&::-webkit-scrollbar-thumb]:rounded-[3px]">
+    <!-- Контент хэсэг -->
+    <div id="contentBody" class="content-body flex-1 p-2.5 overflow-y-auto bg-slate-100 dark:bg-[#0b132b] flex flex-col gap-2.5 [&::-webkit-scrollbar]:w-[1.5px] [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-bordercol [&::-webkit-scrollbar-thumb]:rounded-[3px]">
       
       <!-- 1. Дээд талын 4 үндсэн мэдээллийн карт -->
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5 min-w-[700px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5">
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
           <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРД НЭХЭМЖИЛСЭН</div>
           <div class="text-2xl font-bold text-customBlue my-1">14,385,000.00₮</div>
@@ -182,7 +182,7 @@
       </div>
 
       <!-- 2. Хоёр дахь хэсэг: Орлого/Зарлага график болон Төлбөрийн явц -->
-      <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5 min-w-[700px]">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
           <div class="flex items-center justify-between mb-4">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Сарын орлого / зарлага</div>
@@ -230,7 +230,7 @@
       </div>
 
       <!-- 3. Гурав дахь хэсэг: Сүүлийн гүйлгээ & Төлбөрийн өрөөсөн хүснэгтүүд -->
-      <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5 min-w-[700px]">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4">
           <div class="flex items-center justify-between mb-3">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Сүүлийн гүйлгээ</div>
@@ -310,7 +310,7 @@
       </div>
 
       <!-- 4. Дөрөв дэх хэсэг: Ашиглалтаас хугацаа дууссан буй Үндсэн хөрөнгө -->
-      <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex items-center justify-between min-w-[700px]">
+      <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex items-center justify-between">
         <div class="text-sm font-semibold text-slate-900 dark:text-white">Ашиглалтаас хугацаа дууссан буй Үндсэн хөрөнгө</div>
         <div class="flex items-center gap-4">
           <span class="text-xs text-slate-500 dark:text-[#8a99ad]">Хогооны машин газар</span>
@@ -319,7 +319,7 @@
       </div>
 
       <!-- 5. Тав дахь хэсэг: Доод талын том график картууд (2x2 байрлалтай) -->
-      <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5 min-w-[700px]">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between h-72">
           <div class="flex flex-col">
             <div class="text-sm font-semibold text-slate-900 dark:text-white">Хотхоны зах зээлийн бодит үнэлгээ (Сүүлийн 12 сар)</div>
@@ -486,7 +486,7 @@
     // Хуудас хооронд шилжих контент
     const pagesContent = {
       'dashboard': `
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5 min-w-[700px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2.5">
         <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
           <div class="text-slate-500 dark:text-[#8a99ad] text-[11px] font-medium uppercase tracking-wider">ЭНЭ САРД НЭХЭМЖИЛСЭН</div>
           <div class="text-2xl font-bold text-customBlue my-1">14,385,000.00₮</div>
@@ -521,7 +521,7 @@
         </div>
       </div>
 
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5 min-w-[700px]">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
           <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between">
             <div class="flex items-center justify-between mb-4">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Сарын орлого / зарлага</div>
@@ -568,7 +568,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5 min-w-[700px]">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
           <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4">
             <div class="flex items-center justify-between mb-3">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Сүүлийн гүйлгээ</div>
@@ -647,7 +647,7 @@
           </div>
         </div>
 
-        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex items-center justify-between min-w-[700px]">
+        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex items-center justify-between">
           <div class="text-sm font-semibold text-slate-900 dark:text-white">Ашиглалтаас хугацаа дууссан буй Үндсэн хөрөнгө</div>
           <div class="flex items-center gap-4">
             <span class="text-xs text-slate-500 dark:text-[#8a99ad]">Хогооны машин газар</span>
@@ -655,7 +655,7 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5 min-w-[700px]">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-2.5">
           <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-4 flex flex-col justify-between h-72">
             <div class="flex flex-col">
               <div class="text-sm font-semibold text-slate-900 dark:text-white">Хотхоны зах зээлийн бодит үнэлгээ (Сүүлийн 12 сар)</div>
@@ -720,7 +720,7 @@
         </div>
       `,
       'residents': `
-        <div class="flex flex-wrap items-center justify-between gap-2 bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-3 shrink-0 min-w-[1250px]">
+        <div class="flex flex-wrap items-center justify-between gap-2 bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-3 shrink-0">
           <div class="flex flex-wrap items-center gap-2">
             <select class="bg-slate-50 dark:bg-[#0b132b] border border-slate-200 dark:border-[#1a2642] text-slate-900 dark:text-white text-xs rounded px-3 py-1.5 outline-none">
               <option>Бүх байр</option>
@@ -742,9 +742,9 @@
           </div>
         </div>
 
-        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-3 flex flex-col flex-1 min-h-0 min-w-[1250px]">
-          <div class="flex-1 overflow-auto [&::-webkit-scrollbar]:w-[1.5px] [&::-webkit-scrollbar]:h-[1.5px] [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-bordercol [&::-webkit-scrollbar-thumb]:rounded-[3px]">
-            <table class="w-full text-left text-xs text-slate-500 dark:text-[#8a99ad] border-collapse min-w-[1200px]">
+        <div class="bg-white dark:bg-[#070d1d] border border-slate-200 dark:border-[#1a2642] rounded-lg p-3 flex flex-col flex-1 min-h-0">
+          <div class="flex-1 overflow-auto [&::-webkit-scrollbar]:w-[1.5px] [&::-webkit-scrollbar-thumb]:bg-slate-300 dark:[&::-webkit-scrollbar-thumb]:bg-bordercol [&::-webkit-scrollbar-thumb]:rounded-[3px]">
+            <table class="w-full text-left text-xs text-slate-500 dark:text-[#8a99ad] border-collapse">
               <thead class="sticky top-0 bg-white dark:bg-[#070d1d] z-10 text-[#5c6c84] uppercase text-[10px] border-b border-slate-200 dark:border-[#1a2642]">
                 <tr>
                   <th class="py-2.5 px-3 w-[80px]">БАЙР</th>
